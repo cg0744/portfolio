@@ -1,0 +1,69 @@
+/* Hero Header */
+.hero-header {
+    background-image: url('../images/bootstrap-5-img.png');
+    background-position: bottom; 
+    background-size: cover; 
+    height: 70vh;
+}
+
+/* Enneagram guide table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    padding: 4px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #f4f4f4;
+}
+
+.type-1 { background-color: #2d78e0; color: white; }
+.type-2 { background-color: #22f1d6; }
+.type-3 { background-color: #2b862b; color: white; }
+.type-4 { background-color: #a0d36e; }
+.type-5 { background-color: #fff386; }
+.type-6 { background-color: #f09d04; color: white; }
+.type-7 { background-color: #f73f3f; color: white; }
+.type-8 { background-color: #f12178; color: white; }
+.type-9 { background-color: #e907e9; }
+
+/* footer */
+footer {
+    overflow-x: hidden;
+}
+
+#personalia img {
+    width: 25px;
+}
+
+#footer-sections {
+    display: flex;
+    align-items: center;
+}
+
+/* --- New Utility Classes (Replacing Inline Styles) --- */
+
+.nav-logo {
+    width: 100px;
+}
+
+.footer-logo {
+    width: 150px;
+}
+
+.max-width-730 {
+    max-width: 730px;
+}
+
+.auth-form-container {
+    width: 50vw; 
+    min-width: 300px;
+}
+
+.auth-logo {
+    width: 300px;
+}
