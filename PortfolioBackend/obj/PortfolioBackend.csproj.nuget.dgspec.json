@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Christian\\OneDrive\\PortfolioWorkspace\\PortfolioBackend\\PortfolioBackend.csproj": {}
+    "C:\\Users\\Christian\\OneDrive\\portfolioWorkspace\\PortfolioBackend\\PortfolioBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Christian\\OneDrive\\PortfolioWorkspace\\PortfolioBackend\\PortfolioBackend.csproj": {
+    "C:\\Users\\Christian\\OneDrive\\portfolioWorkspace\\PortfolioBackend\\PortfolioBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Christian\\OneDrive\\PortfolioWorkspace\\PortfolioBackend\\PortfolioBackend.csproj",
+        "projectUniqueName": "C:\\Users\\Christian\\OneDrive\\portfolioWorkspace\\PortfolioBackend\\PortfolioBackend.csproj",
         "projectName": "PortfolioBackend",
-        "projectPath": "C:\\Users\\Christian\\OneDrive\\PortfolioWorkspace\\PortfolioBackend\\PortfolioBackend.csproj",
+        "projectPath": "C:\\Users\\Christian\\OneDrive\\portfolioWorkspace\\PortfolioBackend\\PortfolioBackend.csproj",
         "packagesPath": "C:\\Users\\Christian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Christian\\OneDrive\\PortfolioWorkspace\\PortfolioBackend\\obj\\",
+        "outputPath": "C:\\Users\\Christian\\OneDrive\\portfolioWorkspace\\PortfolioBackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

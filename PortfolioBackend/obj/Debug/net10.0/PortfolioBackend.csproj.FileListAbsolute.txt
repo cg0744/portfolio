@@ -31,3 +31,5 @@ C:\Users\Christian\OneDrive\PortfolioWorkspace\PortfolioBackend\obj\Debug\net10.
 C:\Users\Christian\OneDrive\PortfolioWorkspace\PortfolioBackend\obj\Debug\net10.0\PortfolioBackend.pdb
 C:\Users\Christian\OneDrive\PortfolioWorkspace\PortfolioBackend\obj\Debug\net10.0\PortfolioBackend.genruntimeconfig.cache
 C:\Users\Christian\OneDrive\PortfolioWorkspace\PortfolioBackend\obj\Debug\net10.0\ref\PortfolioBackend.dll
+C:\Users\Christian\OneDrive\portfolioWorkspace\PortfolioBackend\obj\Debug\net10.0\PortfolioBackend.sourcelink.json
+C:\Users\Christian\OneDrive\portfolioWorkspace\PortfolioBackend\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
