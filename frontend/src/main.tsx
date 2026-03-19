@@ -1,13 +1,29 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './assets/css/style.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+function App() {
+  return (
+    <Router>
+      {/* This d-flex setup ensures the footer sticks to the bottom! */}
+      <div className="d-flex flex-column min-vh-100">
+        <Navbar />
+        
+        {/* Main Content Area */}
+        <main className="flex-grow-1">
+          <Routes>
+            {/* The routes swap out the middle content instantly */}
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<h2 className="text-center mt-5">Contact Page Loading...</h2>} />
+            <Route path="/login" element={<h2 className="text-center mt-5">Login Page Loading...</h2>} />
+          </Routes>
+        </main>
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+export default App;
