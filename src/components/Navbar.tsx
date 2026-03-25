@@ -4,7 +4,7 @@ export default function Navbar() {
       <div className="container">
         {/* Brand Logo / Name */}
         <a className="navbar-brand fw-bold text-primary" href="#">
-          &lt;DevPortfolio /&gt;
+          &lt;Chris /&gt;
         </a>
 
         {/* Mobile Hamburger Button */}

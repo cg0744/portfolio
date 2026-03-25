@@ -11,11 +11,10 @@ export default function Contact() {
         </h2>
         
         <p className="lead text-muted mb-5">
-          Whether you have a question, an internship opportunity, or a custom programming project you need help with, my inbox is always open. I'll try my best to get back to you!
+          Whether you have a question or a flexible opportunity for me, my inbox is always open. I'll try my best to get back to you!
         </p>
         
-        {/* Replace the mailto with your actual email address */}
-        <a href="mailto:your.email@example.com" className="btn btn-outline-primary btn-lg px-5 py-3 fs-5 shadow-sm mb-5">
+        <a href="mailto:sig10031980c@gmail.com" className="btn btn-outline-primary btn-lg px-5 py-3 fs-5 shadow-sm mb-5">
           Say Hello
         </a>
 
@@ -30,17 +29,13 @@ export default function Contact() {
             <a href="https://github.com/cg0744" target="_blank" rel="noreferrer" className="text-muted text-decoration-none fs-4 hover-primary">
               <i className="bi bi-github"></i>
             </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer" className="text-muted text-decoration-none fs-4 hover-primary">
+            <a href="https://www.linkedin.com/in/christian-gawriyah-b25b16304/" target="_blank" rel="noreferrer" className="text-muted text-decoration-none fs-4 hover-primary">
               <i className="bi bi-linkedin"></i>
-            </a>
-            {/* You can swap this icon out if you have a Fiverr or freelance storefront link! */}
-            <a href="#" target="_blank" rel="noreferrer" className="text-muted text-decoration-none fs-4 hover-primary">
-              <i className="bi bi-briefcase"></i>
             </a>
           </div>
 
           <p className="text-muted small">
-            Built by Christian Gawriyah
+            Designed & Built by Christian Gawriyah
           </p>
         </div>
       </footer>
