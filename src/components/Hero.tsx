@@ -1,12 +1,13 @@
 import chrisImage from '../assets/Chris.jpeg';
 
+// Hero section component
 export default function Hero() {
   return (
-    // pt-5 and mt-lg-0 ensures the text starts below the fixed navbar on all screens
     <section id="hero" className="d-flex align-items-center min-vh-100 pt-5">
-      <div className="container mt-5"> 
+      <div className="container mt-5">
         <div className="row align-items-center flex-column-reverse flex-lg-row">
           
+          {/* Main content and CTA */}
           <div className="col-lg-6 pe-lg-5 text-center text-lg-start mt-4 mt-lg-0">
             <span className="text-primary fw-bold text-uppercase" style={{ letterSpacing: '2px' }}>
               Hi, my name is
@@ -18,7 +19,7 @@ export default function Hero() {
               I love building software.
             </h2>
             <p className="lead mb-5" style={{ maxWidth: '540px' }}>
-              I am an enthusiastic developer who loves turning ideas into functional, clean code. I enjoy exploring new technologies and solving interesting problems.
+              I am an enthusiastic developer who loves turning ideas into functional, clean code. I enjoy exploring new technologies and solving interesting problems. Whether I'm collaborating with an engineering team or building custom solutions for clients, I'm always excited to take on new challenges and grow my skills.
             </p>
             
             <div className="d-flex gap-3 justify-content-center justify-content-lg-start">
@@ -28,6 +29,7 @@ export default function Hero() {
             </div>
           </div>
 
+          {/* Profile image container */}
           <div className="col-lg-6 text-center">
             <img 
               src={chrisImage}

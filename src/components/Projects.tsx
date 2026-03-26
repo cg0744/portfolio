@@ -1,5 +1,5 @@
 export default function Projects() {
-  // This array acts as our mini-database. It's super easy to update later!
+  // projects data array
   const portfolioProjects = [
     {
       id: 1,
@@ -67,7 +67,7 @@ export default function Projects() {
                     ))}
                   </div>
                   
-                  {/* Links (Pushed to the bottom of the card automatically) */}
+                  {/* Links*/}
                   <div className="mt-auto d-flex gap-3">
                     <a href={project.githubLink} className="text-light text-decoration-none hover-primary">
                       <i className="bi bi-github fs-5"></i> GitHub
