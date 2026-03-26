@@ -26,3 +26,12 @@ $headings-color: #ccd6f6; // Bright, crisp white/blue for headers
     color: $primary !important;
   }
 }
+
+.navbar-collapse {
+  // This ensures the menu stays on top of the content smoothly
+  background-color: $body-bg;
+  @media (max-width: 991.98px) {
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+}

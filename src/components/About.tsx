@@ -29,22 +29,32 @@ export default function About() {
           </div>
 
           {/* Right Column: Fast Facts & Tech Stack */}
-          <div className="col-lg-6">
+          <div className="col-lg-5">
             <div className="p-4 rounded-4 border border-secondary border-opacity-25 bg-secondary bg-opacity-10 h-100">
               <h3 className="h5 text-light fw-bold mb-4"><i className="bi bi-person-badge text-primary me-2"></i>Quick Facts</h3>
               
               <ul className="list-unstyled text-muted mb-5">
-                <li className="mb-3 d-flex align-items-center">
+                {/* Fixed the alignment here with d-flex and flex-nowrap */}
+                <li className="mb-3 d-flex align-items-baseline flex-nowrap">
                   <i className="bi bi-caret-right-fill text-primary me-2"></i> 
-                  <strong>Education:</strong>&nbsp; ROC van Twente (MBO Level 4)
+                  <div>
+                    <strong className="text-light">Education:</strong>&nbsp; 
+                    <span>ROC van Twente (MBO Level 4)</span>
+                  </div>
                 </li>
-                <li className="mb-3 d-flex align-items-center">
+                <li className="mb-3 d-flex align-items-baseline flex-nowrap">
                   <i className="bi bi-caret-right-fill text-primary me-2"></i> 
-                  <strong>Languages:</strong>&nbsp; Dutch, English, Arabic
+                  <div>
+                    <strong className="text-light">Languages:</strong>&nbsp; 
+                    <span>Dutch, English, Arabic</span>
+                  </div>
                 </li>
-                <li className="mb-3 d-flex align-items-center">
+                <li className="mb-3 d-flex align-items-baseline flex-nowrap">
                   <i className="bi bi-caret-right-fill text-primary me-2"></i> 
-                  <strong>Location:</strong>&nbsp; Hengelo, Netherlands
+                  <div>
+                    <strong className="text-light">Location:</strong>&nbsp; 
+                    <span>Hengelo, Netherlands</span>
+                  </div>
                 </li>
               </ul>
 
