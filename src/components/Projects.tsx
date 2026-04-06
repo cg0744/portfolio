@@ -3,11 +3,11 @@ export default function Projects() {
   const portfolioProjects = [
     {
       id: 1,
-      title: "School Project Alpha",
-      description: "A placeholder description for a future school assignment. This software solves a specific problem using modern development practices.",
-      techStack: ["React", "C#", "Bootstrap"],
-      image: "https://placehold.co/600x400/112240/64ffda?text=Project+1",
-      githubLink: "#",
+      title: "Personal Developer Portfolio",
+      description: "A responsive, dark-themed personal portfolio website built to showcase my skills, experience, and projects. It features a modern UI with custom SCSS styling and Bootstrap integration.",
+      techStack: ["React", "TypeScript", "Bootstrap", "Vite", "SCSS"],
+      image: "https://placehold.co/600x400/112240/64ffda?text=Portfolio+Site",
+      githubLink: "https://github.com/cg0744/portfoli",
       liveLink: "#"
     },
     {
