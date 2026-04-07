@@ -22,7 +22,8 @@ export default function Projects() {
         { label: "Frontend", url: "https://github.com/chrisG074/hackathon-zorg-systeem-frontend" },
         { label: "Backend", url: "https://github.com/chrisG074/hackathon-zorg-systeem-backend" }
       ],
-      liveLink: "https://hackathon-zorg-systeem-frontend.vercel.app" 
+      liveLink: "https://hackathon-zorg-systeem-frontend.vercel.app",
+      ribbon: "1st Place" // Added ribbon property here
     },
     {
       id: 3,
@@ -37,7 +38,7 @@ export default function Projects() {
     },
     {
       id: 4,
-      title: "Ventana Interieur & Design",
+      title: "Ventana Interior & Design",
       description: "During my internship at Ventana, I contributed to the development and maintenance of their e-commerce platform using Prestashop. I focused on building custom storefront features and enhancing the site's SEO.",
       techStack: ["HTML/CSS", "JavaScript", "PHP", "Prestashop"],
       image: "https://placehold.co/600x400/112240/64ffda?text=Ventana+Interieur",
@@ -66,9 +67,48 @@ export default function Projects() {
         <div className="row g-4">
           {portfolioProjects.map((project) => (
             <div key={project.id} className="col-md-6 col-lg-4">
-              {/* Dark Mode Card Styling */}
-              <div className="card h-100 bg-transparent border border-secondary border-opacity-25 shadow-sm" style={{ borderRadius: '12px', overflow: 'hidden' }}>
-                <img src={project.image} className="card-img-top" alt={project.title} style={{ borderBottom: '1px solid rgba(100, 255, 218, 0.2)' }} />
+              {/* Dark Mode Card Styling - Added project-card and position-relative here */}
+              <div className="card project-card position-relative h-100 bg-transparent border border-secondary border-opacity-25 shadow-sm" style={{ borderRadius: '12px', overflow: 'hidden' }}>
+                
+                {/* Conditionally render the ribbon if it exists */}
+                {project.ribbon && (
+                  <div
+                    style={{
+                      position: 'absolute',
+                      top: '25px',
+                      right: '-35px',
+                      width: '150px',
+                      background: '#00FFF0', // Primary color
+                      color: '#0a192f', // Background color for text contrast
+                      padding: '5px 0',
+                      fontWeight: '900',
+                      fontSize: '0.85rem',
+                      textTransform: 'uppercase',
+                      letterSpacing: '1px',
+                      textAlign: 'center',
+                      transform: 'rotate(45deg)',
+                      boxShadow: '0 4px 6px rgba(0,0,0,0.3)', // Drop shadow for depth
+                      zIndex: 10,
+                    }}
+                  >
+                    {project.ribbon}
+                  </div>
+                )}
+
+                {/* Image Container with Overlay */}
+                <div className="position-relative">
+                  <div className="project-overlay"></div>
+                  <img 
+                    src={project.image} 
+                    className="card-img-top w-100" 
+                    alt={project.title} 
+                    style={{ 
+                      borderBottom: '1px solid rgba(100, 255, 218, 0.2)',
+                      height: '225px',       
+                      objectFit: 'cover'     
+                    }} 
+                  />
+                </div>
                 
                 <div className="card-body d-flex flex-column p-4">
                   <h5 className="card-title fw-bold text-light mb-3">{project.title}</h5>
@@ -88,7 +128,6 @@ export default function Projects() {
                   {/* Links*/}
                   <div className="mt-auto d-flex flex-wrap gap-3 align-items-center">
                     {project.githubLinks.map((link, idx) => (
-                      // Conditionally render a disabled span OR a clickable link
                       link.label.includes("Private") ? (
                         <span key={idx} className="text-muted text-decoration-none text-nowrap pe-none" style={{ userSelect: 'none' }}>
                           <i className="bi bi-github fs-5 opacity-75"></i> {link.label}
@@ -100,7 +139,7 @@ export default function Projects() {
                       )
                     ))}
                     
-                    {/* Live Demo button: scrolls to top if "#", opens new tab if real URL */}
+                    {/* Live Demo button */}
                     <a 
                       href={project.liveLink} 
                       target={project.liveLink !== "#" ? "_blank" : undefined} 
