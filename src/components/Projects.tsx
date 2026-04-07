@@ -7,26 +7,44 @@ export default function Projects() {
       description: "A responsive, dark-themed personal portfolio website built to showcase my skills, experience, and projects. It features a modern UI with custom SCSS styling and Bootstrap integration.",
       techStack: ["React", "TypeScript", "Bootstrap", "Vite", "SCSS"],
       image: "https://placehold.co/600x400/112240/64ffda?text=Portfolio+Site",
-      githubLink: "https://github.com/cg0744/portfoli",
-      liveLink: "#"
+      githubLinks: [
+        { label: "GitHub", url: "https://github.com/cg0744/portfoli" }
+      ],
+      liveLink: "#" 
     },
     {
       id: 2,
-      title: "Data Structure Analyzer",
-      description: "An algorithm visualizer built during my coursework to demonstrate proficiency in complex data routing and state management.",
-      techStack: ["TypeScript", "Vite", "Algorithms"],
-      image: "https://placehold.co/600x400/112240/64ffda?text=Project+2",
-      githubLink: "#",
-      liveLink: "#"
+      title: "Hackathon 2026 Winner",
+      description: "An award-winning healthcare management system developed during the 2026 Hackathon. Designed to streamline digital healthcare processes, this full-stack application features a decoupled architecture to efficiently handle complex data routing and user interactions. Please note that this is only a prototype.",
+      techStack: ["React", "Vite", "Javascript", "Tailwind", "C#", "Entity Framework", "REST API"],
+      image: "/projects/Hackathon.png",
+      githubLinks: [
+        { label: "Frontend", url: "https://github.com/chrisG074/hackathon-zorg-systeem-frontend" },
+        { label: "Backend", url: "https://github.com/chrisG074/hackathon-zorg-systeem-backend" }
+      ],
+      liveLink: "https://hackathon-zorg-systeem-frontend.vercel.app" 
     },
     {
       id: 3,
-      title: "Custom Client Solution",
-      description: "A flexible architecture designed to show how I can build scalable tools for real-world applications or freelance clients.",
-      techStack: ["API", "Backend", "Database"],
-      image: "https://placehold.co/600x400/112240/64ffda?text=Project+3",
-      githubLink: "#",
-      liveLink: "#"
+      title: "CJ Boekhouding",
+      description: "A custom financial accounting and bookkeeping page. This represents a significant milestone as my first real-world project built and delivered from scratch for a professional client.",
+      techStack: ["HTML/CSS", "PHP"],
+      image: "https://placehold.co/600x400/112240/64ffda?text=CJ+Boekhouding",
+      githubLinks: [
+        { label: "Private", url: "#" } 
+      ],
+      liveLink: "https://www.cjboekhouding.nl" 
+    },
+    {
+      id: 4,
+      title: "Ventana Interieur & Design",
+      description: "During my internship at Ventana, I contributed to the development and maintenance of their e-commerce platform using Prestashop. I focused on building custom storefront features and enhancing the site's SEO.",
+      techStack: ["HTML/CSS", "JavaScript", "PHP", "Prestashop"],
+      image: "https://placehold.co/600x400/112240/64ffda?text=Ventana+Interieur",
+      githubLinks: [
+        { label: "Private", url: "#" } 
+      ],
+      liveLink: "https://www.ventanastore.nl"
     }
   ];
 
@@ -68,11 +86,27 @@ export default function Projects() {
                   </div>
                   
                   {/* Links*/}
-                  <div className="mt-auto d-flex gap-3">
-                    <a href={project.githubLink} className="text-light text-decoration-none hover-primary">
-                      <i className="bi bi-github fs-5"></i> GitHub
-                    </a>
-                    <a href={project.liveLink} className="text-primary text-decoration-none fw-bold">
+                  <div className="mt-auto d-flex flex-wrap gap-3 align-items-center">
+                    {project.githubLinks.map((link, idx) => (
+                      // Conditionally render a disabled span OR a clickable link
+                      link.label.includes("Private") ? (
+                        <span key={idx} className="text-muted text-decoration-none text-nowrap pe-none" style={{ userSelect: 'none' }}>
+                          <i className="bi bi-github fs-5 opacity-75"></i> {link.label}
+                        </span>
+                      ) : (
+                        <a key={idx} href={link.url} target="_blank" rel="noreferrer" className="text-light text-decoration-none hover-primary text-nowrap">
+                          <i className="bi bi-github fs-5"></i> {link.label}
+                        </a>
+                      )
+                    ))}
+                    
+                    {/* Live Demo button: scrolls to top if "#", opens new tab if real URL */}
+                    <a 
+                      href={project.liveLink} 
+                      target={project.liveLink !== "#" ? "_blank" : undefined} 
+                      rel="noreferrer" 
+                      className="text-primary text-decoration-none fw-bold ms-auto text-nowrap"
+                    >
                       Live Demo <i className="bi bi-box-arrow-up-right"></i>
                     </a>
                   </div>
