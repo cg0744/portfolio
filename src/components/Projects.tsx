@@ -6,7 +6,7 @@ export default function Projects() {
       title: "Personal Developer Portfolio",
       description: "A responsive, dark-themed personal portfolio website built to showcase my skills, experience, and projects. It features a modern UI with custom SCSS styling and Bootstrap integration.",
       techStack: ["React", "TypeScript", "Bootstrap", "Vite", "SCSS"],
-      image: "https://placehold.co/600x400/112240/64ffda?text=Portfolio+Site",
+      image: "/projects/Portfolio.png",
       githubLinks: [
         { label: "GitHub", url: "https://github.com/cg0744/portfoli" }
       ],
