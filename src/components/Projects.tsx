@@ -8,7 +8,7 @@ export default function Projects() {
       techStack: ["React", "TypeScript", "Bootstrap", "Vite", "SCSS"],
       image: "/projects/Portfolio.png",
       githubLinks: [
-        { label: "GitHub", url: "https://github.com/cg0744/portfoli" }
+        { label: "GitHub", url: "https://github.com/cg0744/portfolio" }
       ],
       liveLink: "#" 
     },
