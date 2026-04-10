@@ -29,7 +29,7 @@ export default function Contact() {
             <a href="https://github.com/cg0744" target="_blank" rel="noreferrer" className="text-muted text-decoration-none fs-4 hover-primary">
               <i className="bi bi-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/christian-gawriyah-b25b16304/" target="_blank" rel="noreferrer" className="text-muted text-decoration-none fs-4 hover-primary">
+            <a href="https://www.linkedin.com/in/christian-g-b25b16304/" target="_blank" rel="noreferrer" className="text-muted text-decoration-none fs-4 hover-primary">
               <i className="bi bi-linkedin"></i>
             </a>
           </div>
